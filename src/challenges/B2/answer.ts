@@ -7,11 +7,13 @@
  */
 
 // ↓ uncomment bellow lines and add your response!
-/*
+
 export default function ({ events }: { events: EventWithCategory[] }): string[] {
-    return [];
+    let r: any[] = []
+    events.map((e) => e.categories.map((c) => { if (!r.includes(c)) { r.push(c) } }));
+    return r.sort()
 }
-*/
+
 
 // used interfaces, do not touch
 export interface EventWithCategory {
