@@ -14,7 +14,6 @@ export default function ({ groups }: { groups: GroupWithSills[] }): GroupWithSil
     return [];
 }
 
-
 // used interfaces, do not touch
 export interface GroupWithSills {
     name: string;
